@@ -5,6 +5,6 @@
 """
 
 
-def enternumber(val: int):
-    number = int(input('\nEnter a number: '))
-    print(f'\nThe number entered was {number}')
+def enternumber() -> str:
+    number = input('\nEnter a number: ')
+    return f'\nThe number entered was {number}'
