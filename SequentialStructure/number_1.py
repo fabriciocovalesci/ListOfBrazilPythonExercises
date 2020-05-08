@@ -5,7 +5,7 @@
 """
 
 
-def helloworld(hi: str) -> str:
-    return f'\n{hi} Hello World'
+def helloworld(nome: str) -> str:
+    return f'\n{nome} Hello World'
 
 

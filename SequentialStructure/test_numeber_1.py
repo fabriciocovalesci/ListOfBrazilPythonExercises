@@ -4,7 +4,9 @@ from number_1 import helloworld
 
 class TesteNumber1(TestCase):
     def test_number(self):
-        enter = "hi"
-        expected = int
+        enter = "fabricio"
+        expected = "\nfabricio Hello World"
         self.assertEqual(helloworld(enter), expected)
 
+
+main()
