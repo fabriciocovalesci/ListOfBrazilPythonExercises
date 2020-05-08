@@ -4,6 +4,8 @@
 1. Make a program that displays the message "Hello world" on the screen. 
 """
 
-print('\nAlo mundo')
 
-print('\nHello world')
+def helloworld(hi: str) -> str:
+    return f'\n{hi} Hello World'
+
+
