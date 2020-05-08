@@ -5,10 +5,8 @@
 """
 
 
-number_1 = int(input('\nEnter a number for n1: '))
-
-number_2 = int(input('\nEnter a number for n2: '))
-
-sum_numbers = number_1 + number_2
-
-print(f'\nSum of numbers n1 and n2 is: {sum_numbers}')
+def sumtwonumber(n1: int, n2: int):
+    n1 = int(input('\nEnter a number for n1: '))
+    n1 = int(input('\nEnter a number for n2: '))
+    sum_numbers = n1 + n1
+    return f'\nSum of numbers n1 and n2 is: {sum_numbers}'
