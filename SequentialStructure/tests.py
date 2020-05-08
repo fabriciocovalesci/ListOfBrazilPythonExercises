@@ -7,18 +7,16 @@ from number_3 import sumtwonumber
 class TesteSequentialStructure(TestCase):
 
     def test_number_1(self):
-        enter = "fabricio"
-        expected = "\nfabricio Hello World"
-        self.assertEqual(helloworld(enter), expected)
+        text = "Hello World"
+        hello_world = helloworld(text)
+        self.assertTrue(hello_world)
 
 
     def test_number_2(self):
         enter = 3
         expected = f'\nThe number entered was {enter}'
-        self.assertEqual(sumtwonumber(), expected)
+        self.assertEqual(enternumber(), expected)
 
 
-    def test_number_3(self):
-
-
+    # def test_number_3(self):
 main()
