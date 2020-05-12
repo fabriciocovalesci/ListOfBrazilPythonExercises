@@ -20,3 +20,4 @@ class TesteSequentialStructure(TestCase):
 
     # def test_number_3(self):
 main()
+
