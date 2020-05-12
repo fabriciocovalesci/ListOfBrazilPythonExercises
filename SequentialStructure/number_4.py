@@ -1,6 +1,8 @@
 """
+[PT]
 4. Faça um Programa que peça as 4 notas bimestrais e mostre a média.
 
+[EN]
 4. Make a Program that asks for the 4 bimonthly notes and shows the average.
 """
 

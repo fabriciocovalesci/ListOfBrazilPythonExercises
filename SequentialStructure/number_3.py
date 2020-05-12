@@ -1,6 +1,8 @@
 """
+[PT]
 3. Faça um Programa que peça dois números e imprima a soma.
 
+[EN]
 3. Make a Program that asks for two numbers and prints the sum.
 """
 
