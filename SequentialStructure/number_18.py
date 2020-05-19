@@ -11,4 +11,9 @@ this link (in minutes).
 """
 
 def calc_time_download():
-    pass
+    file = float (input("informe o tamanho do arquivo:"))
+    speed = float (input("informe a velocidade de conexao:"))
+    time = file / speed
+    print ("A velocidade de download do arquivo e: " , time)
+
+calc_time_download()
