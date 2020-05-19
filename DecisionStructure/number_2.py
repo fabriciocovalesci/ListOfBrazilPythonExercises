@@ -14,3 +14,6 @@ def number_is_positive_or_negative():
         print(f"\nNumber {number} is negative")
     else:
         print(f"\nNumber {number} is positive")
+
+
+number_is_positive_or_negative()

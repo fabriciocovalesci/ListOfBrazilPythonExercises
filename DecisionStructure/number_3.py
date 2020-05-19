@@ -7,3 +7,13 @@ As the letter writes: F - Female, M - Male, Invalid Gender.
 
 """
 
+def masc_or_femin():
+    enter = input('Type F - Female or M - Male: ')
+    if enter in 'fF':
+        print('\nYou reported - Female')
+    elif enter in 'mM':
+        print('\nYou reported - Male')
+    else:
+        print('\nInvalid Gender')
+
+masc_or_femin()
