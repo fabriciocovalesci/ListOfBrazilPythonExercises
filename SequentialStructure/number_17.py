@@ -26,5 +26,29 @@ or in 3.6 liter gallons, which cost R $ 25.00.
     always round the values ​​up, that is, consider full cans.
 """
 
-def calc_paint_store_part2():
-    pass
+def calc_paint_store_part2(area: float):
+    if area <= 54:
+        print(f'Number of cans: one of 18 liter\nTotal price: R$ 80.00')
+        print('\nOr:')
+        gallons = (area / 21.6) + 1
+        price_gallons = gallons * 25.00
+        print(f'Number of gallons: {gallons:.2f} of 3.6 liter gallons\nTotal price: R$ {price_gallons:.2f}')
+
+        if (price_gallons < 80.00):
+            print(f'\nAdvantage to buy in 3.6 liter gallons\nPrice: R$ {price_gallons:.2f}')
+        else:
+            print(f'\nAdvantage to buy in 18 liter cans\nPrice: R$ 80.00')
+
+    else:
+        cans = (area / 54) + 1
+        price = cans * 80
+        print(f"Number of cans: {cans:.2f}\nTotal price R$ {price:.2f}")
+        print('Or: ->')
+        gallons = (area / 21.6) + 1
+        price_gallons = gallons * 25.00
+        print(f'Number of gallons: {gallons} of 3.6 liter gallons\nTotal price: R$ {price_gallons:.2f}')
+
+        if (gallons > price):
+            print(f'\nAdvantage to buy in 18 liter cans\nPrice: {price:.2f}')
+
+calc_paint_store_part2(53)
