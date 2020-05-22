@@ -14,3 +14,18 @@ The program should calculate the average achieved per student and present:
     - The message "Approved with distinction", if the average is equal to ten.
 
 """
+
+def average_student():
+    partial_1 = float(input("Partial 1 -> "))
+    partial_2 = float(input('Partial 2 -> '))
+
+    average = (partial_1 + partial_2) / 2
+
+    if average >= 7.0 and average < 9.99:
+        print(f'\nApproved\nAverage: {average}')
+    elif average < 7.0:
+        print(f'\nFailed\nAverage: {average}')
+    elif average == 10:
+        print(f'\nApproved with distinction\nAverage: {average}')
+
+average_student()
