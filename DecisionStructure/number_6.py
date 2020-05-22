@@ -6,7 +6,7 @@
 6. Make a Program that reads three numbers and shows the biggest one.
 """
 
-def reads_three_numbers():
+def displays_larger():
     numbers_1 = int(input('\nNumber I: '))
     numbers_2 = int(input('\nNumber II: '))
     numbers_3 = int(input('\nNumber III: '))
@@ -18,4 +18,5 @@ def reads_three_numbers():
     elif numbers_3 > numbers_1 and numbers_3 > numbers_2:
         print(f'\nNumber III {numbers_3} is bigger')
 
-reads_three_numbers()
+displays_larger()
+
