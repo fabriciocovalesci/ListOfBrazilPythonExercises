@@ -27,3 +27,6 @@ The program should ask the user for the value of their hour and the number of ho
     arranged according to the example below. In the example the hour value is 5 and the hour amount is 220.
 
 """
+
+def calc_salary():
+    
