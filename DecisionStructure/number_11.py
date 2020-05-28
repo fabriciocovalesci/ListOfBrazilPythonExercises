@@ -28,3 +28,41 @@ based on the current salary:
     - the amount of the increase;
     - the new salary after the increase.
 """
+
+def calc_reajustes(salario_colaborador: float):
+    reaj1 = 0.20
+    reaj2 = 0.15
+    reaj3 = 0.10
+    reaj4 = 0.05
+    salary = salario_colaborador
+
+    if salary <= 280:
+        reajuste_salario = salary + (salary * reaj1)
+        print(f'\nSalario antes do reajuste R$ {salary}')
+        print(f'Percentual de aumento aplicado {reaj1 * 100} %')
+        print(f'O valor do aumento R$ {abs(salary - reajuste_salario):.2f}')
+        print(f'Novo salario R$ {reajuste_salario:.2f}\n')
+
+    elif salary > 280 and salary < 700:
+        reajuste_salario = salary + (salary * reaj2)
+        print(f'\nSalario antes do reajuste R$ {salary}')
+        print(f'Percentual de aumento aplicado {reaj2 * 100} %')
+        print(f'O valor do aumento R$ {abs(salary - reajuste_salario):.2f}')
+        print(f'Novo salario R$ {reajuste_salario:.2f}\n')
+
+    elif salary > 700 and salary < 1500:
+        reajuste_salario = salary + (salary * reaj3)
+        print(f'\nSalario antes do reajuste R$ {salary}')
+        print(f'Percentual de aumento aplicado {reaj3 * 100} %')
+        print(f'O valor do aumento R$ {abs(salary - reajuste_salario):.2f}')
+        print(f'Novo salario R$ {reajuste_salario:.2f}\n')
+
+    elif salary > 1500:
+        reajuste_salario = salary + (salary * reaj4)
+        print(f'\nSalario antes do reajuste R$ {salary}')
+        print(f'Percentual de aumento aplicado {reaj4 * 100} %')
+        print(f'O valor do aumento R$ {abs(salary - reajuste_salario):.2f}')
+        print(f'Novo salario R$ {reajuste_salario:.2f}\n')
+
+
+calc_reajustes(500)
