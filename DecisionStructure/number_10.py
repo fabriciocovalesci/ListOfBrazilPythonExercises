@@ -8,3 +8,13 @@ ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "V
 Print the message "Good morning!", "Good afternoon!" or good night!" or "Invalid Value!", as appropriate.
 """
 
+turno = input("\nQue turno voce estuda?\n1 - M-matutino\n2 - V-Vespertino\n3 - N- Noturno\n>> ")
+
+if turno == '1':
+    print('\nBom Dia!')
+if turno == '2':
+    print('\nBoa Tarde!')
+if turno =='3':
+    print('\nBoa Noite!')
+else:
+    print("\nValor Inválido!")
