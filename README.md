@@ -3,7 +3,9 @@
 </div>
 
 
-- Todo script possui uma descrição em [PT] Portugês, e em [EN] inglês.
- 
+- Todo script possui uma descrição em [PT] Português, e em [EN] inglês.
+
+- A lista completa dos exercicios foi retirada do site oficial da (Python Brasil)[https://wiki.python.org.br/ListaDeExercicios]
+
 - Objective to train programming logic together with unit tests using python language.
 
