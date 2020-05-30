@@ -26,4 +26,5 @@ and calculate your average. The attribution of concepts follows the table below:
 
 The algorithm must show on the screen the notes, the average, the corresponding concept and the message “APPROVED”
 if the concept is A, B or C or “FAILED” if the concept is D or E.
+
 """
