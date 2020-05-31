@@ -1,7 +1,8 @@
 """
 [PT]
-14. Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, 
-e calcule a sua média. A atribuição de conceitos obedece à tabela abaixo:
+14. Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao 
+longo de um semestre, e calcule a sua média. 
+A atribuição de conceitos obedece à tabela abaixo:
 
   Média de Aproveitamento  Conceito
   Entre 9.0 e 10.0        A
@@ -28,3 +29,19 @@ The algorithm must show on the screen the notes, the average, the corresponding 
 if the concept is A, B or C or “FAILED” if the concept is D or E.
 
 """
+
+nota_1 = float(input('\nNota 1: '))
+nota_2 = float(input('\nNota 2: '))
+
+media = (nota_1 + nota_2) / 2
+
+if media >= 9.0 and media <= 10.0:
+  print(f'Media: {media}\nConceito A')
+elif media >= 7.5 and media < 9.0:
+  print(f'Media: {media}\nConceito B')
+elif media >= 6.0 and media < 7.5:
+  print(f'Media: {media}\nConceito C')
+elif media >= 4.0 and media < 6.0:
+  print(f'Media: {media}\nConceito D')
+elif media < 4.0:
+  print(f'Media: {media}\nConceito E')
