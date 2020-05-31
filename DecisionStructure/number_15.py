@@ -20,3 +20,17 @@ equilateral, isosceles or scalene.
     Scalene Triangle: three different sides;
 """
 
+lado_1 = int(input("Lado 1: "))
+lado_2 = int(input("Lado 2: "))
+lado_3 = int(input("Lado 3: "))
+
+if lado_1 + lado_2 > lado_3:
+    if lado_1 == lado_2 and lado_1 == lado_3:
+        print('Triângulo Equilátero')
+    elif lado_1 == lado_2 or lado_2 == lado_3 or lado_1 == lado_3:
+        print('Triângulo Isósceles')
+    elif lado_1 != lado_2 and lado_3 or lado_2 != lado_1 and lado_3 or lado_1 != lado_3:
+        print('Triângulo Escaleno')
+
+else:
+    print ('É impossivel ser um triângulo')
