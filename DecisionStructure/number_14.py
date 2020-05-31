@@ -43,5 +43,5 @@ elif media >= 6.0 and media < 7.5:
   print(f'Media: {media}\nConceito C')
 elif media >= 4.0 and media < 6.0:
   print(f'Media: {media}\nConceito D')
-elif media < 4.0:
+elif media < 4.0 and media >= 0.0:
   print(f'Media: {media}\nConceito E')
