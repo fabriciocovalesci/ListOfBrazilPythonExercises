@@ -23,8 +23,20 @@
     Otherwise, he will be classified as "Innocent".
 """
 
-telefone = input('Telefonou para a vítima? (Sim - Não): ')
-local = input('Esteve no local do crime? (Sim - Não): ')
-mora = input("Mora perto da vítima? (Sim - Não): ")
-divida = input("Devia para a vítima? (Sim - Não): ")
-trabalho = input("Já trabalhou com a vítima? (Sim - Não): ")
+telefone = int(input('Telefonou para a vítima? (1/Sim - 0/Não): '))
+local = int(input('Esteve no local do crime? (1/Sim - 0/Não): '))
+mora = int(input("Mora perto da vítima? (1/Sim - 0/Não): "))
+divida = int(input("Devia para a vítima? (1/Sim - 0/Não): "))
+trabalho = int(input("Já trabalhou com a vítima? (1/Sim - 0/Não): "))
+
+soma_respostas = telefone + local + mora + trabalho + divida
+
+if soma_respostas < 2:
+    print('\nInocente')
+elif soma_respostas == 2:
+    print('\nSuspeita')
+elif (3 <= soma_respostas <= 4):
+    print('\nCúmplice')
+elif soma_respostas == 5:
+    print('\nAssassino')
+
