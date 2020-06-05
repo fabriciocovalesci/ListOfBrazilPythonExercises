@@ -13,3 +13,18 @@ The result of the operation must be accompanied by a sentence that says whether 
     positive or negative;
     integer or decimal.
 """
+
+numero_1 = int(input('Digite um numero: '))
+numero_2 = int(input('Digite outro numero: '))
+
+print('\nQual operção deseja realizar? ')
+op = input("""
+\n1 - Adição
+\n2 - Subtração
+\n3 - Multiplicação
+\n4 - Divisão
+""")
+
+if op == '1':
+    res = numero_1 + numero_2
+    
