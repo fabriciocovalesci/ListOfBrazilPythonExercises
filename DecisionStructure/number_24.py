@@ -18,13 +18,23 @@ numero_1 = int(input('Digite um numero: '))
 numero_2 = int(input('Digite outro numero: '))
 
 print('\nQual operção deseja realizar? ')
-op = input("""
+op = int(input("""
 \n1 - Adição
 \n2 - Subtração
 \n3 - Multiplicação
 \n4 - Divisão
-""")
+"""))
 
-if op == '1':
+if op == 1:
     res = numero_1 + numero_2
+    if res < 0:
+        print(f"Numero {res} negativo")
+    else:
+        print(f'Numero {res} é positivo')
+elif op == 2:
+    res = numero_1 - numero_2
+elif op == 3:
+    res = numero_1 * numero_2
+elif op == 4:
+    res = numero_1 / numero_2
     
