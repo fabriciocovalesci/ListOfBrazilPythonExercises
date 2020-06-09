@@ -4,6 +4,12 @@
 Depois modifique o programa para que ele mostre os números um ao lado do outro.
 
 [EN]
-6. Make a program that prints the numbers from 1 to 20, one below the other. 
+6.  Make a program that prints the numbers from 1 to 20, one below the other. 
 Then modify the program so that it shows the numbers next to each other.
 """
+
+for numero in range(20+1):
+    print(f"Número: {numero}\n")
+
+for numero in range(20+1):
+    print(f"Número: {numero}",end=' ')
