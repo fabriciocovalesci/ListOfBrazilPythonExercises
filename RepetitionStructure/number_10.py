@@ -13,3 +13,5 @@ import random
 number_1 = int(input("Numero 1: "))
 number_2 = int(input("Numero 2: "))
 
+print(random.randrange(number_1, number_2, 1))
+
